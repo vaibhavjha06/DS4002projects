@@ -37,7 +37,7 @@ linkage_matrix = sch.linkage(embeddings, method='ward')  # Try 'average' or 'com
 # Plot dendrogram
 plt.figure(figsize=(10, 6))
 dendrogram = sch.dendrogram(linkage_matrix)
-plt.axhline(y=1, color='r', linestyle='--')  # Example threshold
+plt.axhline(y=0.8, color='r', linestyle='--')  # Example threshold
 plt.show()
 # Dendogram produced successfully. Chose cut-off at y = 1.
 
